@@ -44,8 +44,8 @@
                         <a class="nav-link" href="vapers.html">Vapers</a>
                     </li>
                     <li class="nav-item">
-                        <a  class="nav-link" href="accesorios.html">Accesorios</a>
-                      </li>
+                        <a class="nav-link" href="accesorios.html">Accesorios</a>
+                    </li>
                 </ul>
                 <form id="buscador" class="d-flex ">
                     <input class="form-control me-2" type="text" placeholder="Que estas buscando?">
@@ -55,7 +55,12 @@
                 <ul class="navbar-nav text-light">
                     <li class="nav-item col-6 col-md-auto p-3">
                         <a href="carrito.html">
-                            <i class="fa-solid fa-cart-shopping"></i>
+                            <button type="button" class="btn btn-primary btn-floating btn-lg" data-mdb-toggle="modal"
+                                data-mdb-target="#myModal">
+                                <i class="fa-solid fa-cart-shopping">
+
+                                </i>
+                            </button>
                         </a>
                     </li>
                 </ul>
@@ -79,44 +84,45 @@
             <div class="col-sm-8">
                 <h2 class="text-danger h1">Demon Killer Slacker Cotton $4.990</h2>
                 <h5 class="h2">$4.990</h5>
-                  <br>
-                  <p>
+                <br>
+                <p>
                     <strong>Seleccione la cantidad:</strong>
-                  </p>
-                    <select class="form-select" id="sel1" name="sellist1">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                    </select>
-                    <a href="carrito.html">
-                        <button id="boton" class="btn btn-primary d-block container-fluid" data-bs="cart.add" style="opacity: 1; display: inline;">
-                            Agregar al carrito
-                        </button>
-                    </a>
-                    <br>
-                    <h3>
-                        <strong>
-                            Descripcion
-                        </strong>
-                    </h3>
-                    <p>
-                        Algodon Demon Killer Pre Armado contiene 30 o 60 piezas de algodón de 3mm con punta dura
-                        removible para instalación rápida en resistencia reparable</p>
-                    <h3>
-                        <strong>
-                            Garantía:
-                        </strong>
-                    </h3>
-                    <p>
-                        Todos nuestros productos incluyen garantía 3×3 (de tres meses) en caso de falla. Si tu aparato
-                        falla dentro de los tres primeros meses te entregaremos una pieza nueva en reemplazo.
+                </p>
+                <select class="form-select" id="sel1" name="sellist1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                <a href="carrito.html">
+                    <button id="boton" class="btn btn-primary d-block container-fluid" data-bs="cart.add"
+                        style="opacity: 1; display: inline;">
+                        Agregar al carrito
+                    </button>
+                </a>
+                <br>
+                <h3>
+                    <strong>
+                        Descripcion
+                    </strong>
+                </h3>
+                <p>
+                    Algodon Demon Killer Pre Armado contiene 30 o 60 piezas de algodón de 3mm con punta dura
+                    removible para instalación rápida en resistencia reparable</p>
+                <h3>
+                    <strong>
+                        Garantía:
+                    </strong>
+                </h3>
+                <p>
+                    Todos nuestros productos incluyen garantía 3×3 (de tres meses) en caso de falla. Si tu aparato
+                    falla dentro de los tres primeros meses te entregaremos una pieza nueva en reemplazo.
 
-                        Prefiere productos con código, sólo los productos con código de autenticidad cumplen con los
-                        estándares. Evita copias por tu seguridad (clones no estan regulados). Tu garantía al comprar en
-                        Vape cubrirá incluso que tu código funcione correctamente.
-                    </p> 
-                    
+                    Prefiere productos con código, sólo los productos con código de autenticidad cumplen con los
+                    estándares. Evita copias por tu seguridad (clones no estan regulados). Tu garantía al comprar en
+                    Vape cubrirá incluso que tu código funcione correctamente.
+                </p>
+
             </div>
         </div>
     </div>
@@ -129,18 +135,54 @@
                     <div class="col-sm-6 col-md-3 item">
                         <h3>Productos</h3>
                         <ul>
-                            <li><a href="#">Vapers</a></li>
-                            <li><a href="#">Accesorios</a></li>
-                            <li><a href="#">Liquidos</a></li>
+                            <li><a href="vapers.html">Vapers</a></li>
+                            <li><a href="accesorios.html">Accesorios</a></li>
                         </ul>
                     </div>
+                    <!--Modal -->
                     <div class="col-sm-6 col-md-3 item">
-                        <h3>Sobre Nosotros</h3>
-                        <ul>
-                            <li><a href="#">Redes</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
+                        <div class="container-fluid">
+                            <h3>¿Quieres suscribirte?</h3>
+                            <p class="text-light">Presiona el boton para suscribirte.</p>
+
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#myModal">
+                                Suscribirse
+                            </button>
+                        </div>
+                        <div class="modal" id="myModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <img src="/img/vapslogo2drk.png" alt="LogoVaps" style="width: 150px;">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <div class="container mt-3">
+                                            <h2></h2>
+                                            <form action="/action_page.php">
+                                                <div class="mb-3 mt-3">
+                                                    <label for="email" class="text-dark">Suscribete para recibir todas
+                                                        las notificaciones </label>
+                                                    <input type="email" class="form-control" id="email"
+                                                        placeholder="Ingresa tu email" name="email">
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Enviar</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-6 item text">
                         <h3>VaporeonVaps</h3>
