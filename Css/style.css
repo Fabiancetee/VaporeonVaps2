@@ -60,12 +60,18 @@ body{
 #descripcionAccesorios{
   margin-top: 5%;
 }
-h3,p,h1,h2,h4,h5,h6{
-  font-family: 'Montserrat', sans-serif;
-}
+
 #Accesorios{
   margin-top: 5%;
   margin-bottom: 25%;
+}
+#carrito{
+  width: 50%;
+  color: rgb(0, 140, 255);
+}
+#bodycard{
+  background-color: rgb(255, 255, 255);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #footer{
   width: 100%;
