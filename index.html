@@ -14,10 +14,12 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/form2.css">
   <script src="https://kit.fontawesome.com/2ab1d6181e.js" crossorigin="anonymous"></script>
 </head>
 
-<body id="index">
+<body id="ancho">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container-fluid">
@@ -45,15 +47,20 @@
         </ul>
         <form id="buscador" class="d-flex ">
           <input class="form-control me-2" type="text" placeholder="¿Que estas buscando?">
-          <button class="btn btn-secondary" type="button"><img id="lupa" src="img/lupa.png" alt="Buscar"></button>
+          <button class="btn btn-secondary " type="button"><img id="lupa" src="img/lupa.png" alt="Buscar"></button>
         </form>
-        <ul class="navbar-nav text-light">
+        <ul class="navbar-nav">
           <li class="nav-item col-6 col-md-auto p-3">
                 <a href="carrito.html" class="btn btn-primary btn-floating btn-md" data-mdb-toggle="modal"
                 data-mdb-target="#myModal">
                   <i class="fa-solid fa-cart-shopping">
                   </i>
                 </a>
+          </li>
+          <li class="nav-item col-6 col-md-auto p-3 ">
+            <a href="login.html" class="btn btn-secondary rounded-pill">
+              <i class="fa-solid fa-user"></i>
+            </a>
           </li>
         </ul>
 
@@ -177,20 +184,50 @@
                 <div class="modal-content">
                   <!-- Modal Header -->
                   <div class="modal-header">
-                    <img src="/img/vapslogo2drk.png" alt="LogoVaps" style="width: 150px;">
+                    <img src="img/vapslogo2drk.png" alt="LogoVaps" style="width: 150px;">
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                   </div>
 
                   <!-- Modal body -->
                   <div class="modal-body">
                     <div class="container mt-3">
-                      <form action="#" method="post">
-                        <div class="mb-3 mt-3">
-                          <label for="email" class="text-dark">Suscribete para recibir todas las notificaciones.</label>
-                          <input type="email" class="form-control" id="email" placeholder="Ingresa tu email"
-                            name="email">
+                      <form class="formulario2" id="formulario2">
+                        <!-- Nombre -->
+                        <div class="formulario-grupo2" id="grupo-nombre2">
+                            <label for="nombre" class="formulario-label2">Nombre</label>
+                            <div class="formulario-grupo-input2">
+                                <input type="text" class="formulario-input2" id="itNombre" name="nombre2" placeholder="">
+                            </div>
+                            <div id="mensaje1" class="errores">Ingrese su nombre</div>
                         </div>
-                        <input type="submit" name="btn_enviar" value="Enviar" class="btn btn-primary">
+                        <!-- Email -->
+                        <div class="formulario-grupo2" id="grupo-email2">
+                            <label for="email" class="formulario-label2">Email</label>
+                            <div class="formulario-grupo-input2">
+                                <input type="text" class="formulario-input2" id="itEmail" name="email2" placeholder="">
+                            </div>
+                            <div id="mensaje2" class="errores">Ingrese un email válido</div>
+                        </div>
+                        <!-- Telefono -->
+                        <div class="formulario-grupo2" id="grupo-telefono2">
+                            <label for="telefono" class="formulario-label2">Telefono</label>
+                            <div class="formulario-grupo-input2">
+                                <input type="text" class="formulario-input2" id="itTelefono" name="telefono2" placeholder="">
+                            </div>
+                            <div id="mensaje3" class="errores">Ingrese un número de 9 dígitos</div>
+                        </div>
+                        <!-- Formulario mensaje -->
+                        <br>
+                        <div class="formulario-mensaje2" id="formulario-mensaje2">
+                            <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Por favor rellene el formulario correctamente.</p>
+                        </div>
+                        <br>
+                        <!-- Boton enviar -->
+                        <div>
+                          <input type="button" name="bEnviar" id="bEnviar" value="Enviar" class="formulario-btn">
+                          <p class="formulario-mensaje-exito2" id="formulario-mensaje-exito2">Te has suscrito, recibiras notificaciones y novedades en su email y telefono, muchas gracias!</p>
+                        </div>
+                        
                       </form>
                     </div>
                   </div>
@@ -229,6 +266,7 @@
     integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+  <script src="js/script2.js"></script>
 
 </body>
 

@@ -1,9 +1,9 @@
 
 
 body{
-  height: 1500px;
+  height: 800px;
 }
-#vaporesso{
+#ancho{
   height: 1000px;
   display: flex;
   flex-direction: column;
@@ -165,8 +165,11 @@ body{
   font-size:13px;
   margin-bottom:0;
 }
+.modal-content{
+  background: #dbdada;
+}
 
-
+/* Media Queries */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   img{
@@ -201,4 +204,18 @@ body{
   img{
     width: 100%;
   }
+}
+/* Formulario */
+#boton-registrarse{
+  align-self: center;
+}
+.formulario-input-error{
+  font-size: 12px;
+  margin-bottom: 0;
+  display: none;
+}
+.error{
+  font-size: 12px;
+  margin-bottom: 0;
+  display: none;
 }
