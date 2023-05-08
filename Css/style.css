@@ -106,7 +106,9 @@ body{
 .footer-dark ul a:hover {
   opacity:0.8;
 }
-
+#ListaSuc{
+  text-align: center;
+}
 @media (max-width:767px) {
   .footer-dark .item:not(.social) {
     text-align:center;
@@ -168,6 +170,8 @@ body{
 .modal-content{
   background: #dbdada;
 }
+#ListaSuc{
+padding-left:   ;}
 
 /* Media Queries */
 /* Extra small devices (phones, 600px and down) */

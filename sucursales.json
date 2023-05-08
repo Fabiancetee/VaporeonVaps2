@@ -1,0 +1,29 @@
+{
+    "sucursales": [
+      {
+        "nombre": "Sucursal Santiago",
+        "direccion": "Av. Providencia 123",
+        "telefono": "+56 2 1234567",
+        "horario": "Lun - Vie: 9:00 - 18:00"
+        
+      },
+      {
+        "nombre": "Sucursal Valparaíso",
+        "direccion": "Calle Urriola 456",
+        "telefono": "+56 32 7654321",
+        "horario": "Lun - Sab: 10:00 - 20:00"
+      },
+      {
+        "nombre": "Sucursal Concepción",
+        "direccion": "Av. Los Carrera 789",
+        "telefono": "+56 41 9876543",
+        "horario": "Lun - Vie: 8:00 - 17:00"
+      },
+      {
+        "nombre": "Sucursal Antofagasta",
+        "direccion": "Av. Balmaceda 1010",
+        "telefono": "+56 55 5432167",
+        "horario": "Lun - Sab: 11:00 - 21:00"
+      }
+    ]
+  }
